@@ -1,0 +1,9 @@
+.env
+secrets.toml
+docs
+env
+lighting_db
+vector_db
+before
+after
+sessions.json

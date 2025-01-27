@@ -1,0 +1,13 @@
+pypdf
+streamlit
+python-magic
+python-magic-bin
+charset-normalizer
+unstructured
+langgraph 
+langchain 
+langchain-openai 
+langchain-community 
+chromadb 
+sentence-transformers 
+tavily-python
