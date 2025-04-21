@@ -1,10 +1,10 @@
 # app.py
 import streamlit as st
-from customaibot.knowledgebase import app
+from knowledgebase import app
 
-st.set_page_config(page_title="Tathmeer Research Assistant", page_icon="🤖")
+st.set_page_config(page_title="Resume Research Assistant", page_icon="🤖")
 
-st.title("🤖 Tathmeer AI Assistant")
+st.title("🤖 Resume AI Assistant")
 st.write("Ask questions about your documents or general knowledge")
 
 if "messages" not in st.session_state:

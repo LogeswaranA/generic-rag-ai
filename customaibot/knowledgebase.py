@@ -140,11 +140,22 @@ def generate_local_answer(state: GraphState):
     context = state["context"]
     
     # Create a dedicated answer generation chain
-    prompt_template = """Answer the question based only on the following context:
+    prompt_template = """You are a HR Expert so answer the question based on the following context:
     {context}
     
     Question: {question}
-    Answer:"""
+
+    Answer:
+        Summarize the information with the following information
+        - Candidate Name
+        - Candidate Skill Set
+        - Candidate Total Experience
+        - Last company worked
+        - College Studies
+        - Degree received
+
+        Summary about this candidate compared to other candidates 
+    """
     
     answer_chain = (
         ChatPromptTemplate.from_template(prompt_template)
